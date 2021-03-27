@@ -1,0 +1,621 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 52;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		B43C021026076ABA00528278 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B43C020F26076ABA00528278 /* AppDelegate.swift */; };
+		B43C021226076ABA00528278 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B43C021126076ABA00528278 /* SceneDelegate.swift */; };
+		B43C021426076ABA00528278 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B43C021326076ABA00528278 /* ViewController.swift */; };
+		B43C021726076ABA00528278 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B43C021526076ABA00528278 /* Main.storyboard */; };
+		B43C021926076ABD00528278 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B43C021826076ABD00528278 /* Assets.xcassets */; };
+		B43C021C26076ABD00528278 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B43C021A26076ABD00528278 /* LaunchScreen.storyboard */; };
+		B43C022726076ABE00528278 /* FScalendar_settingTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B43C022626076ABE00528278 /* FScalendar_settingTests.swift */; };
+		B43C023226076ABE00528278 /* FScalendar_settingUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B43C023126076ABE00528278 /* FScalendar_settingUITests.swift */; };
+		B43C024426076BC100528278 /* FSCalendar in Frameworks */ = {isa = PBXBuildFile; productRef = B43C024326076BC100528278 /* FSCalendar */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		B43C022326076ABE00528278 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B43C020426076ABA00528278 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = B43C020B26076ABA00528278;
+			remoteInfo = "FScalendar-setting";
+		};
+		B43C022E26076ABE00528278 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B43C020426076ABA00528278 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = B43C020B26076ABA00528278;
+			remoteInfo = "FScalendar-setting";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		B43C020C26076ABA00528278 /* FScalendar-setting.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "FScalendar-setting.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		B43C020F26076ABA00528278 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		B43C021126076ABA00528278 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		B43C021326076ABA00528278 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		B43C021626076ABA00528278 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		B43C021826076ABD00528278 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		B43C021B26076ABD00528278 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		B43C021D26076ABD00528278 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B43C022226076ABE00528278 /* FScalendar-settingTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "FScalendar-settingTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		B43C022626076ABE00528278 /* FScalendar_settingTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FScalendar_settingTests.swift; sourceTree = "<group>"; };
+		B43C022826076ABE00528278 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B43C022D26076ABE00528278 /* FScalendar-settingUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "FScalendar-settingUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		B43C023126076ABE00528278 /* FScalendar_settingUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FScalendar_settingUITests.swift; sourceTree = "<group>"; };
+		B43C023326076ABE00528278 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		B43C020926076ABA00528278 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B43C024426076BC100528278 /* FSCalendar in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B43C021F26076ABE00528278 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B43C022A26076ABE00528278 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		B43C020326076ABA00528278 = {
+			isa = PBXGroup;
+			children = (
+				B43C020E26076ABA00528278 /* FScalendar-setting */,
+				B43C022526076ABE00528278 /* FScalendar-settingTests */,
+				B43C023026076ABE00528278 /* FScalendar-settingUITests */,
+				B43C020D26076ABA00528278 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		B43C020D26076ABA00528278 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				B43C020C26076ABA00528278 /* FScalendar-setting.app */,
+				B43C022226076ABE00528278 /* FScalendar-settingTests.xctest */,
+				B43C022D26076ABE00528278 /* FScalendar-settingUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		B43C020E26076ABA00528278 /* FScalendar-setting */ = {
+			isa = PBXGroup;
+			children = (
+				B43C020F26076ABA00528278 /* AppDelegate.swift */,
+				B43C021126076ABA00528278 /* SceneDelegate.swift */,
+				B43C021326076ABA00528278 /* ViewController.swift */,
+				B43C021526076ABA00528278 /* Main.storyboard */,
+				B43C021826076ABD00528278 /* Assets.xcassets */,
+				B43C021A26076ABD00528278 /* LaunchScreen.storyboard */,
+				B43C021D26076ABD00528278 /* Info.plist */,
+			);
+			path = "FScalendar-setting";
+			sourceTree = "<group>";
+		};
+		B43C022526076ABE00528278 /* FScalendar-settingTests */ = {
+			isa = PBXGroup;
+			children = (
+				B43C022626076ABE00528278 /* FScalendar_settingTests.swift */,
+				B43C022826076ABE00528278 /* Info.plist */,
+			);
+			path = "FScalendar-settingTests";
+			sourceTree = "<group>";
+		};
+		B43C023026076ABE00528278 /* FScalendar-settingUITests */ = {
+			isa = PBXGroup;
+			children = (
+				B43C023126076ABE00528278 /* FScalendar_settingUITests.swift */,
+				B43C023326076ABE00528278 /* Info.plist */,
+			);
+			path = "FScalendar-settingUITests";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		B43C020B26076ABA00528278 /* FScalendar-setting */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B43C023626076ABE00528278 /* Build configuration list for PBXNativeTarget "FScalendar-setting" */;
+			buildPhases = (
+				B43C020826076ABA00528278 /* Sources */,
+				B43C020926076ABA00528278 /* Frameworks */,
+				B43C020A26076ABA00528278 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "FScalendar-setting";
+			packageProductDependencies = (
+				B43C024326076BC100528278 /* FSCalendar */,
+			);
+			productName = "FScalendar-setting";
+			productReference = B43C020C26076ABA00528278 /* FScalendar-setting.app */;
+			productType = "com.apple.product-type.application";
+		};
+		B43C022126076ABE00528278 /* FScalendar-settingTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B43C023926076ABE00528278 /* Build configuration list for PBXNativeTarget "FScalendar-settingTests" */;
+			buildPhases = (
+				B43C021E26076ABE00528278 /* Sources */,
+				B43C021F26076ABE00528278 /* Frameworks */,
+				B43C022026076ABE00528278 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				B43C022426076ABE00528278 /* PBXTargetDependency */,
+			);
+			name = "FScalendar-settingTests";
+			productName = "FScalendar-settingTests";
+			productReference = B43C022226076ABE00528278 /* FScalendar-settingTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		B43C022C26076ABE00528278 /* FScalendar-settingUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B43C023C26076ABE00528278 /* Build configuration list for PBXNativeTarget "FScalendar-settingUITests" */;
+			buildPhases = (
+				B43C022926076ABE00528278 /* Sources */,
+				B43C022A26076ABE00528278 /* Frameworks */,
+				B43C022B26076ABE00528278 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				B43C022F26076ABE00528278 /* PBXTargetDependency */,
+			);
+			name = "FScalendar-settingUITests";
+			productName = "FScalendar-settingUITests";
+			productReference = B43C022D26076ABE00528278 /* FScalendar-settingUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		B43C020426076ABA00528278 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1240;
+				LastUpgradeCheck = 1240;
+				TargetAttributes = {
+					B43C020B26076ABA00528278 = {
+						CreatedOnToolsVersion = 12.4;
+					};
+					B43C022126076ABE00528278 = {
+						CreatedOnToolsVersion = 12.4;
+						TestTargetID = B43C020B26076ABA00528278;
+					};
+					B43C022C26076ABE00528278 = {
+						CreatedOnToolsVersion = 12.4;
+						TestTargetID = B43C020B26076ABA00528278;
+					};
+				};
+			};
+			buildConfigurationList = B43C020726076ABA00528278 /* Build configuration list for PBXProject "FScalendar-setting" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = B43C020326076ABA00528278;
+			packageReferences = (
+				B43C024226076BC100528278 /* XCRemoteSwiftPackageReference "FSCalendar" */,
+			);
+			productRefGroup = B43C020D26076ABA00528278 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				B43C020B26076ABA00528278 /* FScalendar-setting */,
+				B43C022126076ABE00528278 /* FScalendar-settingTests */,
+				B43C022C26076ABE00528278 /* FScalendar-settingUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		B43C020A26076ABA00528278 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B43C021C26076ABD00528278 /* LaunchScreen.storyboard in Resources */,
+				B43C021926076ABD00528278 /* Assets.xcassets in Resources */,
+				B43C021726076ABA00528278 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B43C022026076ABE00528278 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B43C022B26076ABE00528278 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		B43C020826076ABA00528278 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B43C021426076ABA00528278 /* ViewController.swift in Sources */,
+				B43C021026076ABA00528278 /* AppDelegate.swift in Sources */,
+				B43C021226076ABA00528278 /* SceneDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B43C021E26076ABE00528278 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B43C022726076ABE00528278 /* FScalendar_settingTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B43C022926076ABE00528278 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B43C023226076ABE00528278 /* FScalendar_settingUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		B43C022426076ABE00528278 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = B43C020B26076ABA00528278 /* FScalendar-setting */;
+			targetProxy = B43C022326076ABE00528278 /* PBXContainerItemProxy */;
+		};
+		B43C022F26076ABE00528278 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = B43C020B26076ABA00528278 /* FScalendar-setting */;
+			targetProxy = B43C022E26076ABE00528278 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		B43C021526076ABA00528278 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				B43C021626076ABA00528278 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		B43C021A26076ABD00528278 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				B43C021B26076ABD00528278 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		B43C023426076ABE00528278 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		B43C023526076ABE00528278 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		B43C023726076ABE00528278 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = ZCR4QT36HT;
+				INFOPLIST_FILE = "FScalendar-setting/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "swift-beginner.FScalendar-setting";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		B43C023826076ABE00528278 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = ZCR4QT36HT;
+				INFOPLIST_FILE = "FScalendar-setting/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "swift-beginner.FScalendar-setting";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		B43C023A26076ABE00528278 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "FScalendar-settingTests/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "swift-beginner.FScalendar-settingTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/FScalendar-setting.app/FScalendar-setting";
+			};
+			name = Debug;
+		};
+		B43C023B26076ABE00528278 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "FScalendar-settingTests/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "swift-beginner.FScalendar-settingTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/FScalendar-setting.app/FScalendar-setting";
+			};
+			name = Release;
+		};
+		B43C023D26076ABE00528278 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "FScalendar-settingUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "swift-beginner.FScalendar-settingUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "FScalendar-setting";
+			};
+			name = Debug;
+		};
+		B43C023E26076ABE00528278 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "FScalendar-settingUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "swift-beginner.FScalendar-settingUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "FScalendar-setting";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		B43C020726076ABA00528278 /* Build configuration list for PBXProject "FScalendar-setting" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B43C023426076ABE00528278 /* Debug */,
+				B43C023526076ABE00528278 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B43C023626076ABE00528278 /* Build configuration list for PBXNativeTarget "FScalendar-setting" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B43C023726076ABE00528278 /* Debug */,
+				B43C023826076ABE00528278 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B43C023926076ABE00528278 /* Build configuration list for PBXNativeTarget "FScalendar-settingTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B43C023A26076ABE00528278 /* Debug */,
+				B43C023B26076ABE00528278 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B43C023C26076ABE00528278 /* Build configuration list for PBXNativeTarget "FScalendar-settingUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B43C023D26076ABE00528278 /* Debug */,
+				B43C023E26076ABE00528278 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		B43C024226076BC100528278 /* XCRemoteSwiftPackageReference "FSCalendar" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/WenchaoD/FSCalendar.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 2.8.2;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		B43C024326076BC100528278 /* FSCalendar */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = B43C024226076BC100528278 /* XCRemoteSwiftPackageReference "FSCalendar" */;
+			productName = FSCalendar;
+		};
+/* End XCSwiftPackageProductDependency section */
+	};
+	rootObject = B43C020426076ABA00528278 /* Project object */;
+}
