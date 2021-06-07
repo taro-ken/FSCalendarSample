@@ -16,6 +16,9 @@
 		B43C022726076ABE00528278 /* FScalendar_settingTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B43C022626076ABE00528278 /* FScalendar_settingTests.swift */; };
 		B43C023226076ABE00528278 /* FScalendar_settingUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B43C023126076ABE00528278 /* FScalendar_settingUITests.swift */; };
 		B43C024426076BC100528278 /* FSCalendar in Frameworks */ = {isa = PBXBuildFile; productRef = B43C024326076BC100528278 /* FSCalendar */; };
+		B477499D266B720500E3180C /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = B477499C266B720500E3180C /* Model.swift */; };
+		B47749A0266C41FA00E3180C /* CalendarCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B477499E266C41FA00E3180C /* CalendarCell.swift */; };
+		B47749A1266C41FA00E3180C /* CalendarCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = B477499F266C41FA00E3180C /* CalendarCell.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -50,6 +53,9 @@
 		B43C022D26076ABE00528278 /* FScalendar-settingUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "FScalendar-settingUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		B43C023126076ABE00528278 /* FScalendar_settingUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FScalendar_settingUITests.swift; sourceTree = "<group>"; };
 		B43C023326076ABE00528278 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B477499C266B720500E3180C /* Model.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Model.swift; sourceTree = "<group>"; };
+		B477499E266C41FA00E3180C /* CalendarCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalendarCell.swift; sourceTree = "<group>"; };
+		B477499F266C41FA00E3180C /* CalendarCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CalendarCell.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -108,6 +114,9 @@
 				B43C021826076ABD00528278 /* Assets.xcassets */,
 				B43C021A26076ABD00528278 /* LaunchScreen.storyboard */,
 				B43C021D26076ABD00528278 /* Info.plist */,
+				B477499C266B720500E3180C /* Model.swift */,
+				B477499E266C41FA00E3180C /* CalendarCell.swift */,
+				B477499F266C41FA00E3180C /* CalendarCell.xib */,
 			);
 			path = "FScalendar-setting";
 			sourceTree = "<group>";
@@ -242,6 +251,7 @@
 				B43C021C26076ABD00528278 /* LaunchScreen.storyboard in Resources */,
 				B43C021926076ABD00528278 /* Assets.xcassets in Resources */,
 				B43C021726076ABA00528278 /* Main.storyboard in Resources */,
+				B47749A1266C41FA00E3180C /* CalendarCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -266,9 +276,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B477499D266B720500E3180C /* Model.swift in Sources */,
 				B43C021426076ABA00528278 /* ViewController.swift in Sources */,
 				B43C021026076ABA00528278 /* AppDelegate.swift in Sources */,
 				B43C021226076ABA00528278 /* SceneDelegate.swift in Sources */,
+				B47749A0266C41FA00E3180C /* CalendarCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

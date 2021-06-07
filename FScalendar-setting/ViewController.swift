@@ -8,51 +8,96 @@
 import UIKit
 import FSCalendar
 
-class ViewController: UIViewController, FSCalendarDataSource, FSCalendarDelegate,UIImagePickerControllerDelegate,UINavigationControllerDelegate{
+class ViewController: UIViewController, FSCalendarDataSource, FSCalendarDelegate, FSCalendarDelegateAppearance {
     
-    fileprivate weak var calendar: FSCalendar!
+    private let cellClassName = "CalendarCell"
+    private let reuseId = "CalendarCell"
     
-    @IBOutlet weak var photo: UIImageView!
+    private var texts:[Model] = []
     
 
+    fileprivate let formatter: DateFormatter = {
+        let formatter = DateFormatter()
+        formatter.dateFormat = "yyyy-MM-dd"
+        return formatter
+    }()
+    
+    @IBOutlet weak var calendar: FSCalendar!
+    {
+        didSet{
+            let cellNib = UINib(nibName: cellClassName, bundle: nil)
+            calendar.register(cellNib.classForCoder, forCellReuseIdentifier: reuseId)
+           
+            calendar.delegate = self
+            calendar.dataSource = self
+        }
+    }
+    
+    @IBAction func addButton(_ sender: Any) {
+        var textField = UITextField()
+                let alert = UIAlertController(title: "新しいアイテムを追加", message: "", preferredStyle: .alert)
+
+                let action = UIAlertAction(title: "リストに追加", style: .default) { (action) in
+                    // 「リストに追加」を押された時に実行される処理
+
+                    let newItem: Model = Model(text: textField.text!)
+
+                    // アイテム追加処理
+                    self.texts.append(newItem)
+                    self.calendar?.reloadData()
+
+                }
+
+                alert.addTextField { (alertTextField) in
+                    alertTextField.placeholder = "新しいアイテム"
+                    textField = alertTextField
+                }
+
+                alert.addAction(action)
+                present(alert, animated: true, completion: nil)
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        self.title = "FSCalendar"
+    
     }
     
-//    //カメラ機能
-//    func calendar(_ calendar: FSCalendar, didSelect date: Date, at monthPosition: FSCalendarMonthPosition) {
-//        let picker = UIImagePickerController()
-//            picker.sourceType = .camera
-//            picker.delegate = self
-//            // UIImagePickerController カメラを起動する
-//            present(picker, animated: true, completion: nil)
-        }
-    /// シャッターボタンを押下した際、確認メニューに切り替わる
-    /// - Parameters:
-    ///   - picker: ピッカー
-    ///   - info: 写真情報
-//    func imagePickerController(_ picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [UIImagePickerController.InfoKey : Any]) {
-//        if let image = info[.originalImage] as? UIImage {
-//            self.photo.image = image as? UIImage
-//        // "写真を使用"を押下した際、写真アプリに保存する
-//        UIImageWriteToSavedPhotosAlbum(image, nil, nil, nil)
-//        // UIImagePickerController カメラが閉じる
-//        self.dismiss(animated: true, completion: nil)
-//        }
-//    }
+   
     
-//    func imagePickerController(_ picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [String : Any]) {
-//
-//        if let image = info[UIImagePickerController.InfoKey.editedImage.rawValue] {
-//            self.photo.image = image as? UIImage
-//               }
-//
-//               picker.dismiss(animated: true, completion: nil)
-//}
-//    override func didReceiveMemoryWarning() {
-//            super.didReceiveMemoryWarning()
-//            // Dispose of any resources that can be recreated.
-//        }
+    func calendar(_ calendar: FSCalendar, cellFor date: Date, at position: FSCalendarMonthPosition) -> FSCalendarCell {
+        guard let cell = calendar.dequeueReusableCell(withIdentifier: reuseId, for: date, at: position) as?
+                CalendarCell else {
+            return FSCalendarCell()
+        }
+        let data = texts[date.hashValue]
+        cell.subtitle = data.text
+        cell.configure(user: data)
+        return cell
+       
+    }
+    
+    func calendar(_ calendar: FSCalendar, subtitleFor date: Date) -> String? {
+        return self.calendar(calendar, subtitleFor: date)
+    }
+    
+    func calendar(_ calendar: FSCalendar, willDisplay cell: FSCalendarCell, for date: Date, at position: FSCalendarMonthPosition) {
+        
+    }
+    
+    func calendar(_ calendar: FSCalendar, titleFor date: Date) -> String? {
+       
+        return "ima"
+    }
+    
+    func calendar(_ calendar: FSCalendar, numberOfEventsFor date: Date) -> Int {
+        return 2
+    }
+    
 
+    
+    
+    
+}
 
